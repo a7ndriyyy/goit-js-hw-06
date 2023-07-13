@@ -14,7 +14,7 @@ const images = [
 ];
 
 
-const listEl = document.querySelector("#gallery");
+const listEl = document.querySelector(".gallery");
 console.dir(listEl);
 
 const createItemEl = images.map(({url,alt}) => 

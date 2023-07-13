@@ -1,4 +1,4 @@
-const inputValue = document.querySelector("#ame-input");
+const inputValue = document.querySelector("#name-input");
 const spanEl = document.querySelector("#name-output");
 
 inputValue.addEventListener("input", onInput);
