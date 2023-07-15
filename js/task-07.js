@@ -1,9 +1,11 @@
-const controlEl = document.querySelector("#font-size-control");
-console.dir(controlEl);
+const controlEl= document.querySelector("#font-size-control");
+const spanValue = document.querySelector("#text");
 
-const spanEl = document.querySelector("#text");
-controlEl.addEventListener("input",onRange);
-  function onRange (peyn){
-    const value = peyn.currentTarget.value;
-    spanEl.style.fontSize = `${value}px`; 
-  }
+spanValue.style.fontSize = `${controlEl.value}px`;
+
+controlEl.addEventListener("input", () => {
+  spanValue.style.fontSize = `${controlEl.value}px`;
+});
+
+console.log(controlEl);
+console.log(spanValue);

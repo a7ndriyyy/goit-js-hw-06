@@ -1,4 +1,4 @@
-const formEl = document.querySelector("#login-form");
+const formEl = document.querySelector(".login-form");
 formEl.addEventListener("submit",errSubmit);
 
  function errSubmit(peyn) {
